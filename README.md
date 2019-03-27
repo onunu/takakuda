@@ -18,6 +18,14 @@ Or install it yourself as:
 ## Usage
 All object can be 'Takakuda'
 
+```ruby
+require 'takakuda'
+'hoge'.to_takk
+1.to_takk
+[1, 2, 3].to_takk
+```
+All of them are changed to 'Takakuda'
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/onunu/takakuda.
