@@ -26,8 +26,7 @@ RSpec.describe Takakuda do
     it 'Any String is false' do
       expect('hoge'.takk?).to be_falsey
     end
-
-    it '"Takakuda" is false' do
+    it '"Takakuda" is true' do
       expect('Takakuda'.takk?).to be_truthy
     end
     it 'Array is false' do
