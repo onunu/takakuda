@@ -18,4 +18,19 @@ RSpec.describe Takakuda do
 
     # OK, all is Takakuda!
   end
+
+  describe '#takk?' do
+    it 'Integer is false' do
+      expect(1.takk?).to be_falsey
+    end
+    it 'Any String is false' do
+      expect('hoge'.takk?).to be_falsey
+    end
+    it '"Takakuda" is true' do
+      expect('Takakuda'.takk?).to be_truthy
+    end
+    it 'Array is false' do
+      expect([1, 2, 3].takk?).to be_falsey
+    end
+  end
 end

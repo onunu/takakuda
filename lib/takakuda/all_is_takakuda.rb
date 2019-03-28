@@ -3,6 +3,10 @@ module Takakuda
     def to_takk
       TAKAKUDA
     end
+
+    def takk?
+      self == TAKAKUDA
+    end
   end
 end
 
